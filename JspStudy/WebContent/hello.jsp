@@ -11,8 +11,8 @@
 	//스크립트릿(Scriptlet)--> 자바코드를 사용할 수 있게 영역을 설정 할 수있다
 	//변수선언,제어문을 이용한 JAVA코드를 대부분 작성한다.
 	String str ="김수정";
-	System.out.println("str="+str); //디버깅할 경우 사용하는 방법
-	out.println("str="+str); //웹 출력->document.wirte("str="+str);
+	//System.out.println("str="+str); //디버깅할 경우 사용하는 방법
+	out.println("<h1>"+"str="+str); //웹 출력->document.wirte("str="+str);
 	%>
 </body>
 </html>
