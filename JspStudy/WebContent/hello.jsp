@@ -1,18 +1,34 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%!
+    //선언문->jsp 전체에서 불러다 사용할 변수,메서드가 필요로 한경우에 선언->불러다 사용가능
+     String name="홍길동";
+     
+     public void setName(String name){ //Car(String name){this.name=name;}
+	  this.name=name;
+     }
+
+     public String getName(){
+    	 return name;
+     }
+%>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Jsp 첫번째 예제</title>
+<title>Insert title here</title>
 </head>
 <body>
 <%
-	//스크립트릿(Scriptlet)--> 자바코드를 사용할 수 있게 영역을 설정 할 수있다
-	//변수선언,제어문을 이용한 JAVA코드를 대부분 작성한다.
-	String str ="김수정";
-	//System.out.println("str="+str); //디버깅할 경우 사용하는 방법
-	out.println("<h1>"+"str="+str); //웹 출력->document.wirte("str="+str);
-	%>
+    float f=2.3f;
+    int i=Math.round(f);//반올림
+    java.util.Date d=new java.util.Date();
+    out.println("d의 값은=>"+d);//d.toString()
+%>
+<hr><p>
+정수 f의 반올림값은? <%=i %><p>
+현재의 날짜와 시간은? <%=d.toString() %><br>
+name의 값은? <%=name %><p>
+getName()을 호출? <%=getName() %>
 </body>
 </html>
