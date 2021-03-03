@@ -14,5 +14,7 @@
 	//System.out.println("str="+str); //디버깅할 경우 사용하는 방법
 	out.println("<h1>"+"str="+str); //웹 출력->document.wirte("str="+str);
 	%>
+	<hr>
+	str의 값=<%=str %>
 </body>
 </html>
